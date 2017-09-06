@@ -13,4 +13,19 @@ columns by `len` and multibyte characters break layout.
 This class may cause confusion of length and width.
 This class should be used only if above problem occurs.
 
+# usage
 
+source is
+
+```
+import utfstr
+
+a = '日本語 and English'
+b = utfstr.utfstr(a)
+
+print(len(a),len(b))
+```
+
+output is
+
+```15 18```
