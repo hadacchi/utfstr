@@ -5,8 +5,7 @@ of a string which include 3byte UTF-8 characters.
 
 Some multibyte characters, e.g. Kanji, Hiragana and Katakana in Japanese, have
 twice width of ascii characters.
-Usually we don't care it, however, some modules, like texttables, get width of
-columns by `len` and multibyte characters break layout.
+utfstr object returns width of the string by `len`.
 
 # attention
 
